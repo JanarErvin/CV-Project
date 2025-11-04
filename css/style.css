@@ -68,6 +68,9 @@ header {
 
 .contact-info {
   list-style: none;
+  display: flex;        
+  gap: 1rem;            
+  flex-wrap: nowrap;    
 }
 
 .contact-info span {
@@ -75,6 +78,7 @@ header {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--alt-font);
+  white-space: nowrap;  
 }
 
 /* SECTIONS */
@@ -143,7 +147,8 @@ hr {
 
 .license-grid .header {
   font-weight: bold;
-  padding-bottom: 5px; /* removed border-bottom */
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
 }
 
 .license-grid article {
