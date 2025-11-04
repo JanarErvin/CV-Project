@@ -105,6 +105,51 @@ hr {
   margin-top: 1rem;
 }
 
+/*LANGUAGE TABELE*/
+.language-table {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.language-table li {
+  padding: 5px;
+  text-align: center;
+}
+
+.language-table .header {
+  font-weight: bold;
+}
+
+.language-table .language {
+  text-align: left;
+  font-weight: bold;
+}
+
+/*LICENSES*/
+#licenses {
+  max-width: 400px;
+  margin: left;
+}
+
+.license-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  align-items: start;
+}
+
+.license-grid .header {
+  font-weight: bold;
+  padding-bottom: 5px; /* removed border-bottom */
+}
+
+.license-grid article {
+  display: contents;
+}
+
 /* FOOTER */
 footer {
   border-top: 2px solid var(--gray);
