@@ -1,7 +1,5 @@
-const { error } = require("console");
-
 document.addEventListener('DOMContentLoaded', () => {
-    const basePath = location.hostname.includes('github.io') ? '/CV-Project/' : ' ./';
+    const basePath = location.hostname.includes('github.io') ? '/CV-Project/' : '../';
 
     const targetImage = document.querySelector('.header-image-container img');
     let i = 1
@@ -10,46 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
         targetImage.addEventListener('click', () => {
 
             targetImage.style.opacity = '0';
-            setTimeout(()=> {
+            setTimeout(() => {
 
-                if(i === album.length){
-        i = 0
+                if (i === album.length) {
+                    i = 0
                 }
 
-        targetImage.src = basePath + album[i];
-        i++
+                targetImage.src = basePath + album[i];
+                i++;
 
-        targetImage.style.opacity = '1';
+                targetImage.style.opacity = '1';
 
 
-    }, 300);
+            }, 300);
 
 
         });
     } else {
         console.error('targetImage not found or album is missing');
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 });

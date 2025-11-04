@@ -48,7 +48,7 @@ header {
   align-items: center;
 }
 
-.header-image-container {
+.header-image-container img {
   width: 180px;
   height: 180px;
   border: 2px solid var(--gray);

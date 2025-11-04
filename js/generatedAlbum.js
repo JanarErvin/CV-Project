@@ -1,7 +1,7 @@
 const album = [
-  "images/portraits/portrait1.jpg",
-  "images/portraits/portrait2.jpg",
-  "images/portraits/portrait3.jpg",
-  "images/portraits/portrait4.jpg",
-  "images/portraits/portrait5.jpg"
+  "images/portrait1.jpg",
+  "images/portrait2.jpg",
+  "images/portrait3.jpg",
+  "images/portrait4.jpg",
+  "images/portrait5.jpg"
 ];
